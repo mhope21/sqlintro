@@ -40,11 +40,11 @@ and total quantity.  Here you will have
 (SUM(Quantity) * Price) AS TotalPrice.  Paste your SQL statement below.
 
  SELECT customername, productname, SUM(quantity) AS TotalQuantity, (SUM(quantity) * price) AS TotalPrice 
-   ...> FROM customers c
-   ...> JOIN orders o ON c.customerid = o.customerid
-   ...> JOIN orderdetails od ON o.orderid = od.orderid
-   ...> JOIN products p ON p.productid = od.productid
-   ...> GROUP BY customername, p.productid;
+FROM customers c
+JOIN orders o ON c.customerid = o.customerid
+JOIN orderdetails od ON o.orderid = od.orderid
+JOIN products p ON p.productid = od.productid
+GROUP BY customername, p.productid;
 
 5. Add a new Order to the Orders table.  You will have to specify the ID of an existing customer
 to satisfy the foreign key constraint.  You will also have to specify the ID of an existing
