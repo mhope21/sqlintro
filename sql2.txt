@@ -69,8 +69,8 @@ VALUES (10444, 1, 3),(10444, 2, 2), (10444, 3, 12);
 0.50.  Paste your SQL statement below.
 
 UPDATE products
-   ...> SET price = price + 0.50
-   ...> WHERE price < 20;
+SET price = price + 0.50
+WHERE price < 20;
 
 9.  Try to delete Customer 76.  What happens? What would you have to delete in order to delete
 this customer?  (Hint: It's not just orders.)   There are three statements to be performed, in order
