@@ -51,8 +51,8 @@ to satisfy the foreign key constraint.  You will also have to specify the ID of 
 employee.  Paste your SQL statement below.
 
 INSERT INTO orders
-   ...> (customerid, employeeid, orderdate, shipperid)
-   ...> VALUES (90, 6, '5/8/1998', 3);
+(customerid, employeeid, orderdate, shipperid)
+VALUES (90, 6, '5/8/1998', 3);
 
 6. Add three OrderDetails.  These should specify the ID of the new Order you just created.  For each,
 you will have to specify the ID of an existing product.  Paste your SQL statement below.
